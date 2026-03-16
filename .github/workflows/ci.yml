@@ -1,8 +1,14 @@
+name: CI Workflow
 on: [push]
 jobs:
   build:
+    name: Hello World
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - run: echo "Helo world"
+        name: Checkout code
+      - run: echo "Hello world"
+        name: Echo greeting 
       - run: ls -la
+        name: List files
+        
