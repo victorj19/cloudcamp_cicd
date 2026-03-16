@@ -12,7 +12,7 @@ jobs:
       - run: ls -la
         name: List files
 
-  build:
+  build2:
     name: Hello World
     needs: build
     runs-on: ubuntu-latest
