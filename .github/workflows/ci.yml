@@ -1,3 +1,8 @@
 on: [push]
 jobs:
-    build
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - users: actions/checkout@v2
+
+            
