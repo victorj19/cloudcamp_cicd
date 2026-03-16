@@ -3,4 +3,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
+      - run: echo "Helo world"
+      - run: ls -la
