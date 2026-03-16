@@ -11,4 +11,15 @@ jobs:
         name: Echo greeting 
       - run: ls -la
         name: List files
-        
+
+  build:
+    name: Hello World
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        name: Checkout code
+      - run: echo "Hello world"
+        name: Echo greeting 
+      - run: ls -la
+        name: List files      
