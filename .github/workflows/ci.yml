@@ -18,9 +18,9 @@ jobs:
             java-version: '21'
       - name: Grant execute permission for gradlew
         run: | 
-        chmod +x gradlew
-        ./gradlew buildJar
-        find . -name "*.jar"
+            chmod +x gradlew
+            ./gradlew buildJar
+            find . -name "*.jar"
 
 
     
